@@ -5,10 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Master Beerio Manager!</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #6b5d5d;
+            overflow: auto;
+        }
+
+        .navbar a {
+            float: left;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background-color: #000;
+        }
+
+        .active {
+            background-color: #aa043b;
+        }
+
+        @media screen and (max-width: 500px) {
+            .navbar a {
+                float: none;
+                display: block;
+            }
+        }
+    </style>
 </head>
 
+
+
+
 <body>
-    <header></header>
+    <header>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+        <div class="navbar">
+            <a class="active" href="#"><i class="fa-solid fa-trophy"></i> Leaderboard</a>
+            <a href="#"><i class="fa-solid fa-flag-checkered"></i> Race History</a>
+            <a href="#"><i class="fa-solid fa-medal"></i> Records</a>
+            <a href="#"><i class="fa-solid fa-award"></i> Awards</a>
+            <a href="#"><i class="fa-solid fa-chart-area"></i> General Stats</a>
+            <a href="#"><i class="fa-solid fa-arrow-down-up-across-line"></i> Bracket</a>
+            <a href="#"><i class="fa-solid fa-people-group"></i> Team</a>
+            <a href="#"><i class="fa-solid fa-beer-mug-empty"></i> Beerio History</a>
+        </div>
+
+    </header>
 
     <main></main>
 
