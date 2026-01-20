@@ -1,0 +1,72 @@
+Since Mario Kart is fundamentally a "free-for-all" (FFA) rather than a simple 1v1, standard Elo gets tricky. However, for a race size of just 4 players, the mathematically "nicest" and most robust method is the Pairwise Elo approach.
+
+This method treats one 4-player race not as a single event, but as six simultaneous 1v1 matches.
+
+Here is how to calculate it cleanly, ensuring high-ranked players don't farm points off low-ranked players, and low-ranked players don't get punished for losing to pros.
+The Logic: Deconstruct the Race
+
+In a 4-player race with players A, B, C, and D finishing in that order (1st to 4th), you process the following results:
+
+    A beats B
+
+    A beats C
+
+    A beats D
+
+    B beats C
+
+    B beats D
+
+    C beats D
+
+You calculate the Elo change for each of these mini-matches and sum them up to get the final rating change for the race.
+The Algorithm
+
+For every pair of players (A,B) where A places higher than B:
+
+    Calculate Expected Score (EA​):
+    EA​=1/1+10^(Rb-Ra)/400
+
+    (Where RA​ is Player A's current rating and RB​ is Player B's rating)
+
+    Calculate Point Exchange: Since A won, their actual score (SA​) is 1.
+    ΔR=K×(1−EA​)
+
+    Apply Updates:
+
+        Player A gains ΔR
+
+        Player B loses ΔR
+
+    Repeat for all unique pairs in the race, accumulating the total change for each player before applying it to their final score.
+
+Why this is "Nice"
+
+    Partial Credit: In a strict "Winner Take All" system, coming 2nd feels like losing. In this pairwise system, if you are rated 1200 and come 2nd behind a 2000-rated player but beat two 1200-rated players, you will actually gain rating. You "lost" to the pro (expected) but "won" two fair matchups.
+
+    Scalability: It works if someone disconnects and you only have a 3-player race. The math doesn't break; you just process fewer pairs.
+
+    Tuning: You can adjust the k_factor.
+
+        32: Standard volatility (good for casual leagues).
+
+        10-20: Low volatility (grindy, hard to move up/down).
+
+        50+: Chaos mode (one bad race tanks your score).
+
+Alternative: The "Mario Kart VR" Method
+
+If you prefer the system to feel exactly like the game (where you almost always gain points unless you do terribly), you need an inflationary system.
+
+The Pairwise Elo above is "Zero Sum" (points won = points lost). The actual Mario Kart VR system adds points based on the average room rating.
+
+Formula:
+Score=PlacementBase+SkillModifier
+
+    PlacementBase: 1st (+20), 2nd (+10), 3rd (-5), 4th (-20).
+
+    SkillModifier: If your Rating < Room Average, add bonus points. If Rating > Room Average, subtract penalty points.
+
+This is easier to code but harder to balance; eventually, everyone's number just goes up forever (inflation), whereas Elo measures true skill relative to the group.
+
+Would you like me to refine the code to handle ties (e.g., if two players finish at the exact same time)?
