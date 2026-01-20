@@ -3,7 +3,8 @@ This is the master beerio manager! welcome
 work on databse first
 then figure out elo logic
 
-If you are here I probably know you, so for the moment only check out the elocalcualtors folder and try to run the py commands
+**If you are here I probably know you, so for the moment only check out the elocalcualtors folder and try to run the py files**
+**Feel free to check out SQL databases as well but they are not complete yet, trying to get everything working together right now**
 
 elo.py wasnt consistent with its math but the newelocalculator should have fixed that (hopefully)
 
