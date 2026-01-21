@@ -1,5 +1,14 @@
 #This is the first test for the elo system please read the read.me to see how to change values and optimize this sytem
 
+'''
+THIS
+CODE
+DOES
+NOT
+OUTPUT
+NET
+ZERO
+'''     
 ############################### CONFIGURATION #####################################
 
 k_fact = 32  ## 10 - 20 = low risk k_fact ## 32-40 = medium risk k_fact ## 50+ = high risk k_fact

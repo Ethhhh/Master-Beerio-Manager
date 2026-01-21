@@ -1,12 +1,5 @@
-This is the master beerio manager! welcome
+Welcome to the Master Beerio Manager Repo
 
-work on databse first
-then figure out elo logic
+Only thing you are going to want to look at right now is the "IAMTHEIMPORTANTFOLDER" Folder because that is where the actual working code is but feel free to dig around to try and understand what is going on.
 
-**If you are here I probably know you, so for the moment only check out the elocalcualtors folder and try to run the py files**
-**Feel free to check out SQL databases as well but they are not complete yet, trying to get everything working together right now**
-
-elo.py wasnt consistent with its math but the newelocalculator should have fixed that (hopefully)
-
-Old Elo: Pool was not super consistent and more elo might have been awarded than taken (Awarded: 50 elo --- Taken: -20 Elo)
-New Elo: Pool is more consistent than before only allowing small discrepencies in the data (Awarded 50 elo --- Taken: -50 Elo)
+There is also a very very basic beeriodb file where you can test adding some old Beerio data into the database - this is far from complete though
