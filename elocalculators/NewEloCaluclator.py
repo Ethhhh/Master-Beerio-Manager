@@ -3,7 +3,7 @@
 
 ############################### CONFIGURATION ##################################### FOR 1v1v1v1
 
-k_fact = 100  ## 10 - 20 = low risk k_fact ## 32-40 = medium risk k_fact ## 50+ = high risk k_fact IGNORE THIS IS NOT RELEVANT TO THE CURRENT NUMBERS
+k_fact = 100  
 
 #Asking for input
 
@@ -41,6 +41,7 @@ win3 = expected_result(Aprofile[0], Dprofile[0])
 EloChangeFirst3 = k_fact * (1 - win3)
 
 EloChangeCombined1 = EloChangeFirst1 + EloChangeFirst2 + EloChangeFirst3 
+int(EloChangeCombined1)
 print("First Place Elo Change: ", EloChangeCombined1)
 
 
@@ -58,6 +59,7 @@ second3 = expected_result(Bprofile[0], Dprofile[0])
 EloChangeSecond3 = k_fact * (1 - second3)  # Win
 
 EloChangeCombined2 = EloChangeSecond1 + EloChangeSecond2 + EloChangeSecond3
+int(EloChangeCombined2)
 print("Second Place Elo Change: ", EloChangeCombined2)
 
 
@@ -75,6 +77,7 @@ third3 = expected_result(Cprofile[0], Dprofile[0])
 EloChangeThird3 = k_fact * (1 - third3)    # Win
 
 EloChangeCombined3 = EloChangeThird1 + EloChangeThird2 + EloChangeThird3
+int(EloChangeCombined3)
 print("Third Place Elo Change: ", EloChangeCombined3)
 
 
@@ -92,5 +95,5 @@ fourth3 = expected_result(Dprofile[0], Cprofile[0])
 EloChangeFourth3 = k_fact * (0 - fourth3)  # Loss
 
 EloChangeCombined4 = EloChangeFourth1 + EloChangeFourth2 + EloChangeFourth3
-# FIXED: Variables below were printing "Third3", "Third2", etc.
+int(EloChangeCombined4)
 print("Fourth Place Elo Change: ", EloChangeCombined4)

@@ -1,0 +1,9 @@
+6 ranks 
+<80 - Designated Driver
+80 - Lightweight
+90 - Weekend Warrior
+100 - Alcoholic
+110 - Functional Alcoholic
+120+ - DUI Obliterator
+
+the current numbers are arbitrary and will be changed to reflect the actual ranked system once it is updated with all of the old data
