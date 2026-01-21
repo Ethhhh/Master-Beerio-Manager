@@ -70,3 +70,15 @@ Score=PlacementBase+SkillModifier
 This is easier to code but harder to balance; eventually, everyone's number just goes up forever (inflation), whereas Elo measures true skill relative to the group.
 
 Would you like me to refine the code to handle ties (e.g., if two players finish at the exact same time)?
+
+bkr
+team dont gain points from teammate
+point from player 2 and player 3
+
+tournament based vs race based
+percentage based - low cap
+gain around the same amount of points if you win any race / loss
+net 0
+
+5 digits + 1%
+1000.00 = 10 points
