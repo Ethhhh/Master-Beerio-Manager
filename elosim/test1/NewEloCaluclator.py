@@ -74,7 +74,6 @@ print(PlayerDStartElo)
 
 k_fact = 100  
 
-
 #this will be where it checks database and builds a player profile
 Aprofile = [PlayerAStartElo, format1 ] #1 - will build UI to make this alot easier
 Bprofile = [PlayerBStartElo, format2] #2
