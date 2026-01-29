@@ -31,4 +31,4 @@ async def log_race(interaction: discord.Interaction):
 
 client.run('')
 
-#bruh i removed it??
+#bruh i removed it??bruh
