@@ -1,5 +1,7 @@
 WELCOME TO THE MUTHAFUCKIN REPO
 
+(IMPORTANT) https://python-fiddle.com/saved/33cce59b-2158-44af-94ab-f3d35289d02e -- This link allows you to run the Elo simulator in a webpage, simply click run and scroll to the bottom to see the output, you can change the values as you see fit (IMPORANT)
+
 If you know how python works then this should be pretty easy to test the code, if not good luck
 
 Feel free to check the "VersionAlpha" folder this contains everything that was in the original test versions of the calculator
