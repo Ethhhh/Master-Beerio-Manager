@@ -13,14 +13,14 @@ def addUniquePlayer(player_name):
         with sqlite.connect("streamlit\\databasetesting\\databasetest1.db") as conn:
             cursor = conn.cursor()
 
-            # The database engine handles the check for us now
+
             cursor.execute(
                 'INSERT OR IGNORE INTO players (Name, Beerlo, Drinking_Races, Beerios_Attended, Beerios_Won, Races_Done) VALUES (?, ?, ?, ?, ?, ?)', 
                 (player_name, 10000, 0, 0, 0, 0)
             )
             
             print(player_name, "Check/Added to Database!")
-            # Check if a row was actually added
+
 
     except sqlite.Error as e:
         print(f"Database error: {e}")
@@ -57,12 +57,12 @@ def expected_result(rating_player, rating_opponent):
     """Calculates the probability of winning (0.0 to 1.0)"""
     return 1 / (1 + 10 ** ((rating_opponent - rating_player) / 400))
 
-# --- Page Setup ---
-st.logo = ("") # Note: st.logo requires an image path or URL usually
+
+st.logo = ("") #
 st.title("Log Races")
 st.badge("Testing", color="yellow")
 
-# --- Lists ---
+
 players = ["Cam", "Nolan", "Owen", "Julian", "Ethan", "Kaiden", "Jake", "Alex", "Aiden", "Easton", "Charlie", "Ryley", "Rocky", "Ty", "Santi", "Ewan", "Carson", "George", "Brad", "Cole", "Ashlin", "Zach", "Nathaniel"]
 raceOptions = ["Solos", "Teams"]
 teamOptions = ["2v2", "Relays"]
@@ -199,7 +199,6 @@ if st.button("Run Update"):
                 change_third += k_factor * (1 - expected_result(rating_three, rating_fourth))
 
 
-        # 5. 4TH PLACE MATCHUPS (Loses to everyone)
         if rating_fourth is not None:
             change_fourth += k_factor * (0 - expected_result(rating_fourth, rating_one))
             change_fourth += k_factor * (0 - expected_result(rating_fourth, rating_two))

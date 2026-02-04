@@ -38,22 +38,19 @@ playerCount = st.text_input("Please enter how many players were at the Beerio in
 if 'saved_event_id' not in st.session_state:
     st.session_state.saved_event_id = None
 
-# --- STEP 1: Handle the Event ID persistence ---
 clean_name = game.strip().replace(" ", "_").lower()
 
-# Initialize the event_id in memory if it doesn't exist yet
+
 if 'saved_event_id' not in st.session_state:
     st.session_state.saved_event_id = ""
 
-# --- STEP 2: The "Format & Generate" Button ---
 if st.button("Format and Validate Data + Generate EventID"):
-    # Generate the ID ONLY when this button is clicked
+
     new_id = clean_name + str(random.randint(00000, 99999))
     
-    # Save it to session state so it survives the next click
+
     st.session_state.saved_event_id = new_id
-    
-    # Show the preview
+
     dataTable = pd.DataFrame([
         {"EventID": new_id, "Game": game, "Type": type, "Winner": first, "Date": date, "Total Players": playerCount}
     ])
@@ -62,21 +59,21 @@ if st.button("Format and Validate Data + Generate EventID"):
     st.warning("EventID Created! Please proceed to push to database.")
     st.info(f"Your event id is: {new_id}", icon="🚨")
 
-# Optional: Persist the ID display so the user knows it's still there
+
 elif st.session_state.saved_event_id:
     st.info(f"Ready to push Event ID: {st.session_state.saved_event_id}", icon="✅")
 
 
-# --- STEP 3: The "Push" Button ---
+
 if st.button("Push details to database! - Only press when you formatted the data!"):
-    # Check if we have an ID ready
+
     if not st.session_state.saved_event_id:
         st.error("Please click 'Format and Validate' first to generate an Event ID!")
     else:
-        # Use the SAVED ID, not a new random one
+
         final_event_id = st.session_state.saved_event_id
         
-        # Format helpers
+
         def format_entry(entry):
             if isinstance(entry, list):
                 return ", ".join(entry)
@@ -106,7 +103,7 @@ if st.button("Push details to database! - Only press when you formatted the data
             st.balloons()
             st.success(f"Successfully pushed Event {final_event_id} to database!")
             
-            # Clear the ID so you can start a new entry
+
             st.session_state.saved_event_id = ""
             
         except sqlite3.IntegrityError as e:

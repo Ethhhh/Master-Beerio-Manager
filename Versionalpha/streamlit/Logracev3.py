@@ -4,11 +4,10 @@ import sqlite3 as sqlite
 import math
 import datetime
 import time
-# --- Database Connection ---
+
 connection = sqlite.connect("streamlit\\databasetesting\\databasetest1.db")
 cursor = connection.cursor()
 
-# --- Functions ---
 
 def addUniquePlayer(player_name):
     try:
@@ -54,11 +53,11 @@ def expected_result(rating_player, rating_opponent):
     return 1 / (1 + 10 ** ((rating_opponent - rating_player) / 400))
 
 # --- Page Setup ---
-st.logo = ("") # Note: st.logo requires an image path or URL usually
+st.logo = ("") 
 st.title("Log Races")
 st.badge("Testing", color="yellow")
 
-# --- Lists ---
+
 players = [
     "Aiden", "Alex", "Ashlin", "Brad", "Cam", "Carson", "Charlie", "Cole", 
     "Easton", "Ethan", "Ewan", "George", "Jake", "Julian", "Kaiden", 
@@ -133,7 +132,6 @@ else:
 
 st.divider()
 
-# --- SESSION STATE INITIALIZATION ---
 if 'calculation_results' not in st.session_state:
     st.session_state.calculation_results = None
 
@@ -174,7 +172,7 @@ if st.button("Run Calculations!"):
                 addUniquePlayer(fourthPlace)
                 playerFourthProfile = fetchPlayerData(fourthPlace)
 
-        # THE ELO CALCULATIONS 
+
         k_factor = 100
 
         change_first = 0
@@ -211,7 +209,7 @@ if st.button("Run Calculations!"):
                 change_third += k_factor * (1 - expected_result(rating_three, rating_fourth))
 
 
-        # 5. 4TH PLACE MATCHUPS (Loses to everyone)
+
         if rating_fourth is not None:
             change_fourth += k_factor * (0 - expected_result(rating_fourth, rating_one))
             change_fourth += k_factor * (0 - expected_result(rating_fourth, rating_two))
@@ -251,16 +249,16 @@ if st.button("Run Calculations!"):
                 "Final Beerlo": int(round(rating_fourth + change_fourth))
             })
 
-        # Save results to session state so they persist for the confirmation button
+
         st.session_state.calculation_results = table_data
 
     else:
         st.error("Missing information. Please ensure all fields for the selected mode are filled.")
 
-# --- CONFIRMATION SECTION ---
+
 if st.session_state.calculation_results is not None:
     
-    # 1. Display the table
+
     UITable = pd.DataFrame(st.session_state.calculation_results)
     st.dataframe(UITable, use_container_width=True, hide_index=True)
     st.toast("Calculations Completed!", icon="✅")
@@ -268,7 +266,7 @@ if st.session_state.calculation_results is not None:
     st.divider()
     st.warning("Make sure EVERYTHING is correct before you push changes to the database. These are hard if not impossible to reverse, I do have backups if something happens. Thanks!💖")
 
-    # 2. Backfill / Manual Date Option
+
     # (Placed INSIDE the check so it only shows when you have data to push)
     with st.expander("📅 Backfill / Manual Date (Click to open)"):
         st.caption("Use this only if you are uploading old data. Leave unchecked for live races.")
@@ -283,7 +281,7 @@ if st.session_state.calculation_results is not None:
         else:
             st.info("System will use current Date & Time automatically.")
 
-    # 3. Push Changes Logic
+
     if st.button("Push Changes?"):
         
         # Safety Check: ensure we actually have data to push
@@ -294,17 +292,15 @@ if st.session_state.calculation_results is not None:
         try:
             with sqlite.connect("streamlit\\databasetesting\\databasetest1.db") as conn:
                 cursor = conn.cursor()
-                
-                # --- DETERMINE TIMESTAMP ---
+
                 if is_backfill:
-                    # Combine the manual date and time
+
                     combined_dt = datetime.datetime.combine(manual_date, manual_time)
                     final_timestamp = combined_dt.strftime("%Y-%m-%d %H:%M:%S")
                 else:
-                    # Use "Right Now"
+
                     final_timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-                # --- STEP 1: UPDATE PLAYERS TABLE ---
                 for row in st.session_state.calculation_results:
                     cursor.execute(
                         "UPDATE players SET Beerlo = ?, Races_Done = Races_Done + 1 WHERE Name = ?",
@@ -316,7 +312,7 @@ if st.session_state.calculation_results is not None:
                             (row["Player"],)
                         )
                 
-                # --- STEP 2: INSERT INTO RACE-HISTORY ---
+
                 final_race_type = teamMode if modeSelection == "Teams" else onevoneSelection
 
                 cursor.execute(
@@ -338,7 +334,7 @@ if st.session_state.calculation_results is not None:
                 
                 new_race_id = cursor.lastrowid
 
-                # --- STEP 3: INSERT INTO ELO_HISTORY ---
+  
                 for row in st.session_state.calculation_results:
                     cursor.execute(
                         """

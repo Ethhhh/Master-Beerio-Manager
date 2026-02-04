@@ -24,13 +24,12 @@ def add_player_unique(db_path, player_name):
         with sqlite3.connect(db_path) as conn:
             cursor = conn.cursor()
 
-            # The database engine handles the check for us now
+
             cursor.execute(
                 'INSERT OR IGNORE INTO players (Name, Beerlo) VALUES (?, ?)', 
                 (player_name, 10000)
             )
             
-            # Check if a row was actually added
 
     except sqlite3.Error as e:
         print(f"Database error: {e}")
@@ -43,8 +42,7 @@ def fetch_data_db(player_Name, player_Starting_Elo ):
 
 def buildprofile(player_profile, name, elo):
     player_profile = [name, elo]
-### The Program ###
-# Ask player what sort of race we want
+
 while True: 
     drinking = input("Press (D) if the race was a DRINKING race, Press (N) if the race was a NON-DRINKING race\n")
     userInput = input("Press (A) for SOLO gamemodes, Press (B) for TEAM gamemodes\n")

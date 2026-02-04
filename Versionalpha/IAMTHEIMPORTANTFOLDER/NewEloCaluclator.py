@@ -44,7 +44,7 @@ EloChangeCombined1 = EloChangeFirst1 + EloChangeFirst2 + EloChangeFirst3
 print("First Place Elo Change: ", EloChangeCombined1)
 
 
-# --- SECOND PLACE (Lost to A; Beats C, D) ---
+
 # B vs A (Loss)
 second1 = expected_result(Bprofile[0], Aprofile[0])
 EloChangeSecond1 = k_fact * (0 - second1)  # Loss
@@ -61,7 +61,7 @@ EloChangeCombined2 = EloChangeSecond1 + EloChangeSecond2 + EloChangeSecond3
 print("Second Place Elo Change: ", EloChangeCombined2)
 
 
-# --- THIRD PLACE (Lost to A, B; Beats D) ---
+
 # C vs A (Loss)
 third1 = expected_result(Cprofile[0], Aprofile[0])
 EloChangeThird1 = k_fact * (0 - third1)    # Loss
@@ -78,7 +78,7 @@ EloChangeCombined3 = EloChangeThird1 + EloChangeThird2 + EloChangeThird3
 print("Third Place Elo Change: ", EloChangeCombined3)
 
 
-# --- FOURTH PLACE (Lost to A, B, C) ---
+
 # D vs A (Loss)
 fourth1 = expected_result(Dprofile[0], Aprofile[0])
 EloChangeFourth1 = k_fact * (0 - fourth1)  # Loss
@@ -92,5 +92,5 @@ fourth3 = expected_result(Dprofile[0], Cprofile[0])
 EloChangeFourth3 = k_fact * (0 - fourth3)  # Loss
 
 EloChangeCombined4 = EloChangeFourth1 + EloChangeFourth2 + EloChangeFourth3
-# FIXED: Variables below were printing "Third3", "Third2", etc.
+
 print("Fourth Place Elo Change: ", EloChangeCombined4)

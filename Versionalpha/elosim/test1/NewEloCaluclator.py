@@ -88,7 +88,7 @@ def expected_result(rating_player, rating_opponent):
 # CALCULATIONS
 #################################################
 
-# --- FIRST PLACE (Beats B, C, D) ---
+
 # A vs B (Win)
 win1 = expected_result(Aprofile[0], Bprofile[0])
 EloChangeFirst1 = k_fact * (1 - win1)
@@ -105,7 +105,7 @@ convert1 = int(EloChangeCombined1)
 print("First Place Elo Change: ", convert1)
 
 
-# --- SECOND PLACE (Lost to A; Beats C, D) ---
+
 # B vs A (Loss)
 second1 = expected_result(Bprofile[0], Aprofile[0])
 EloChangeSecond1 = k_fact * (0 - second1)  # Loss
@@ -123,7 +123,7 @@ convert2 = int(EloChangeCombined2)
 print("Second Place Elo Change: ", convert2)
 
 
-# --- THIRD PLACE (Lost to A, B; Beats D) ---
+
 # C vs A (Loss)
 third1 = expected_result(Cprofile[0], Aprofile[0])
 EloChangeThird1 = k_fact * (0 - third1)    # Loss
@@ -141,7 +141,7 @@ convert3 = int(EloChangeCombined3)
 print("Third Place Elo Change: ", convert3)
 
 
-# --- FOURTH PLACE (Lost to A, B, C) ---
+
 # D vs A (Loss)
 fourth1 = expected_result(Dprofile[0], Aprofile[0])
 EloChangeFourth1 = k_fact * (0 - fourth1)  # Loss
