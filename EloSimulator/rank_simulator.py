@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 # --- 1. SETTINGS ---
 STARTING_ELO = 10000.0
 K_FACTOR = 250.0
-DIVIDER = 1200.0  
-TOTAL_RACES = 200 
+DIVIDER = 2000.0  
+TOTAL_RACES = 1000
 
 player_names = [
     "Aiden", "Alex", "Ashlin", "Brad", "Cam", "Carson", "Charlie", "Cole", 
@@ -99,3 +99,7 @@ plt.title("Beerlo Simulation - End-of-Line Labels")
 plt.xlabel("Race Count")
 plt.ylabel("Rating")
 plt.show()
+
+#this print statment just shows you the spread between the best and worst player in the output
+final_values = sorted([players[p]['elo'] for p in player_names])
+print(f"range: {final_values[0]:.0f} - {final_values[-1]:.0f}")
