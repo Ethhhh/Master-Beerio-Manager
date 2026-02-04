@@ -1,6 +1,6 @@
 WELCOME TO THE MUTHAFUCKIN REPO
 
-(IMPORTANT) https://python-fiddle.com/saved/33cce59b-2158-44af-94ab-f3d35289d02e -- This link allows you to run the Elo simulator in a webpage, simply click run and scroll to the bottom to see the output, you can change the values as you see fit (IMPORANT)
+(IMPORTANT) https://python-fiddle.com/saved/2a1003fe-bd18-4a53-a44c-1bd5f47143bc -- This link allows you to run the Elo simulator in a webpage, simply click run and scroll to the bottom to see the output, you can change the values as you see fit (IMPORANT)
 
 ################# - What Changing Each Value Affects - #################
 
