@@ -6,7 +6,7 @@ WELCOME TO THE MUTHAFUCKIN REPO
 
 STARTING_ELO = 10000.0 # this is the elo that every player will start at 
 
-K_FACTOR = 250.0 # this is the volatility in a race. Basically the max amount of points that can change. Keep in mind that when you win in first you are winning three races so technically you could win up to 750 points, this is very rare though and usually the max discrepancy is about 100+- points.
+K_FACTOR = 250.0 # this is the volatility in a race. Basically the max amount of points that can change. Keep in mind that when you win in first you are technically winning three races(AvB, AvC, AvD) so technically you could win up to 750 points, this is very rare, if not impossible though and usually the max discrepancy is about 100+- points.
 
 There is one protection for second place, if they are losing points (1:Cole 2:Cam 3:Kaiden 4:Alex) then the amount of points they are losing is cut in half (there were some HUGE upsets so this is personal preference)
 
