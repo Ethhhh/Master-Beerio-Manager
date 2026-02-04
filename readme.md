@@ -2,6 +2,18 @@ WELCOME TO THE MUTHAFUCKIN REPO
 
 (IMPORTANT) https://python-fiddle.com/saved/33cce59b-2158-44af-94ab-f3d35289d02e -- This link allows you to run the Elo simulator in a webpage, simply click run and scroll to the bottom to see the output, you can change the values as you see fit (IMPORANT)
 
+################# - What Changing Each Value Affects - #################
+
+STARTING_ELO = 10000.0 # this is the elo that every player will start at 
+
+K_FACTOR = 250.0 # this is the volatility in a race. Basically the max amount of points that can change. Keep in mind that when you win in first you are winning three races so technically you could win up to 750 points, this is very rare though and usually the max discrepancy is about 100+- points.
+
+There is one protection for second place, if they are losing points (1:Cole 2:Cam 3:Kaiden 4:Alex) then the amount of points they are losing is cut in half (there were some HUGE upsets so this is personal preference)
+
+DIVIDER = 1200.0  - the amount of possible spread between ranks
+
+TOTAL_RACES = 200 (the longer the sim the more possible spread but the max at a div level of 1200 will be about 5-6 thousand
+
 If you know how python works then this should be pretty easy to test the code, if not good luck
 
 Feel free to check the "VersionAlpha" folder this contains everything that was in the original test versions of the calculator
