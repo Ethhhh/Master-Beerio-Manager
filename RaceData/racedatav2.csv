@@ -1,0 +1,292 @@
+Race_ID,Type,Subtype,1st,2nd,3rd,4th,Game
+1,1v1v1v1,,Cam,Nolan,Owen,Kaiden,MK Wii
+2,1v1v1v1,,Cam,Nolan,Owen,Kaiden,MK Wii
+3,1v1v1v1,,Cam,Nolan,Owen,Kaiden,MK Wii
+4,1v1v1v1,,Cam,Nolan,Owen,Kaiden,MK Wii
+5,1v1v1v1,,Ethan,Brad,Jake,Ty,MK Wii
+6,1v1v1v1,,Ethan,Brad,Jake,Ty,MK Wii
+7,1v1v1v1,,Brad,Ethan,Jake,Ty,MK Wii
+8,1v1v1v1,,Brad,Ethan,Jake,Ty,MK Wii
+9,1v1v1v1,,Cam,Ethan,Nolan,Brad,MK Wii
+10,1v1v1v1,,Cam,Ethan,Nolan,Brad,MK Wii
+11,1v1v1v1,,Cam,Ethan,Nolan,Brad,MK Wii
+12,1v1v1v1,,Cam,Ethan,Nolan,Brad,MK Wii
+13,1v1v1v1,,Owen,Kaiden,Ty,Jake,MK Wii
+14,1v1v1v1,,Owen,Kaiden,Ty,Jake,MK Wii
+15,1v1v1v1,,Owen,Kaiden,Ty,Jake,MK Wii
+16,1v1v1v1,,Owen,Kaiden,Ty,Jake,MK Wii
+17,1v1v1v1,,Jake,Brad,Nolan,Owen,MK Wii
+18,1v1v1v1,,Jake,Brad,Nolan,Owen,MK Wii
+19,1v1v1v1,,Jake,Brad,Nolan,Owen,MK Wii
+20,1v1v1v1,,Jake,Brad,Nolan,Owen,MK Wii
+21,1v1v1v1,,Cam,Ethan,Jake,Brad,MK Wii
+22,1v1v1v1,,Cam,Ethan,Jake,Brad,MK Wii
+23,1v1v1v1,,Cam,Ethan,Jake,Brad,MK Wii
+24,1v1v1v1,,Cam,Ethan,Jake,Brad,MK Wii
+25,1v1v1v1,,Cam,Jake,Brad,Alex,MK 8 150cc
+26,1v1v1v1,,Cam,Brad,Jake,Alex,MK 8 150cc
+27,1v1v1v1,,Cam,Alex,Jake,Brad,MK 8 150cc
+28,1v1v1v1,,Cam,Jake,Brad,Alex,MK 8 150cc
+29,1v1v1,,Julian,Cole,Kaiden,,MK 8 150cc
+30,1v1v1,,Kaiden,Cole,Julian,,MK 8 150cc
+31,1v1v1,,Cole,Kaiden,Julian,,MK 8 150cc
+32,1v1v1,,Kaiden,Cole,Julian,,MK 8 150cc
+33,1v1v1,,Owen,Ethan,Ty,,MK 8 150cc
+34,1v1v1,,Owen,Ethan,Ty,,MK 8 150cc
+35,1v1v1,,Owen,Ty,Ethan,,MK 8 150cc
+36,1v1v1,,Ty,Ethan,Owen,,MK 8 150cc
+37,1v1v1,,Owen,Cam,Kaiden,,MK 8 150cc
+38,1v1v1,,Owen,Cam,Kaiden,,MK 8 150cc
+39,1v1v1,,Owen,Cam,Kaiden,,MK 8 150cc
+40,1v1v1,,Ty,Jake,Cole,,MK 8 150cc
+41,1v1v1,,Cole,Ty,Jake,,MK 8 150cc
+42,1v1v1,,Ty,Jake,Cole,,MK 8 150cc
+43,1v1v1v1,,Brad,Alex,Julian,Ethan,MK 8 150cc
+44,1v1v1v1,,Ethan,Alex,Brad,Julian,MK 8 150cc
+45,1v1v1v1,,Alex,Brad,Julian,Ethan,MK 8 150cc
+46,1v1v1v1,,Brad,Alex,Ethan,Julian,MK 8 150cc
+47,1v1v1v1,,Alex,Jake,Brad,Cole,MK 8 150cc
+48,1v1v1v1,,Cole,Brad,Jake,Alex,MK 8 150cc
+49,1v1v1v1,,Alex,Brad,Cole,Jake,MK 8 150cc
+50,1v1v1v1,,Cole,Brad,Jake,Alex,MK 8 150cc
+51,1v1v1v1,,Cam,Cole,Ty,Kaiden,MK 8 150cc
+52,1v1v1v1,,Cam,Kaiden,Ty,Cole,MK 8 150cc
+53,1v1v1v1,,Cam,Kaiden,Ty,Cole,MK 8 150cc
+54,1v1v1v1,,Kaiden,Cam,Ty,Cole,MK 8 150cc
+55,1v1v1v1,,Cam,Kaiden,Owen,Brad,MK 8 150cc
+56,1v1v1v1,,Owen,Kaiden,Cam,Brad,MK 8 150cc
+57,1v1v1v1,,Owen,Brad,Cam,Kaiden,MK 8 150cc
+58,1v1v1v1,,Cam,Kaiden,Owen,Brad,MK 8 150cc
+59,1v1,,Ethan,Kaiden,,,MK DD
+60,1v1,,Julian,Easton,,,MK DD
+61,1v1,,Owen,Nathaniel,,,MK DD
+62,3v3,,Ethan&Easton&Nathaniel,Kaiden&Julian&Owen,,,MK DD
+63,3v3,,Kaiden&Julian&Owen,Ethan&Easton&Nathaniel,,,MK DD
+64,1v1,,Charlie,Ashlin,,,MK DD
+65,1v1,,Jake,Alex,,,MK DD
+66,1v1,,Cam,Brad,,,MK DD
+67,3v3,,Cam&Jake&Ashlin,Charlie&Alex&Brad,,,MK DD
+68,1v1,,Ashlin,Nathaniel,,,MK DD
+69,1v1,,Jake,Easton,,,MK DD
+70,1v1,,Cam,Ethan,,,MK DD
+71,1v1,,Owen,Charlie,,,MK DD
+72,1v1,,Kaiden,Alex,,,MK DD
+73,1v1,,Brad,Julian,,,MK DD
+74,3v3,,Kaiden&Julian&Owen,Charlie&Alex&Brad,,,MK DD
+75,1v1,,Owen,Ashlin,,,MK DD
+76,1v1,,Jake,Kaiden,,,MK DD
+77,1v1,,Cam,Julian,,,MK DD
+78,3v3,,Kaiden&Julian&Owen,Cam&Jake&Ashlin,,,MK DD
+79,1v1v1v1,,Julian,Jake,Ashlin,Easton,MK Wii
+80,1v1v1v1,,Easton,Julian,Jake,Ashlin,MK Wii
+81,1v1v1v1,,Jake,Easton,Julian,Ashlin,MK Wii
+82,1v1v1v1,,Julian,Easton,Jake,Ashlin,MK Wii
+83,1v1v1v1,,Nolan,Owen,Cam,Ewan,MK Wii
+84,1v1v1v1,,Owen,Nolan,Cam,Ewan,MK Wii
+85,1v1v1v1,,Nolan,Owen,Cam,Ewan,MK Wii
+86,1v1v1v1,,Owen,Cam,Nolan,Ewan,MK Wii
+87,1v1v1v1,,Cam,Jake,Ashlin,Ewan,MK Wii
+88,1v1v1v1,,Cam,Jake,Ewan,Ashlin,MK Wii
+89,1v1v1v1,,Cam,Jake,Ewan,Ashlin,MK Wii
+90,1v1v1v1,,Cam,Jake,Ewan,Ashlin,MK Wii
+91,1v1v1v1,,Owen,Julian,Easton,Nolan,MK Wii
+92,1v1v1v1,,Nolan,Owen,Easton,Julian,MK Wii
+93,1v1v1v1,,Owen,Nolan,Julian,Easton,MK Wii
+94,1v1v1v1,,Nolan,Easton,Julian,Owen,MK Wii
+95,1v1v1v1,,Cam,Jake,Easton,Julian,MK Wii
+96,1v1v1v1,,Cam,Julian,Jake,Easton,MK Wii
+97,1v1v1v1,,Cam,Jake,Julian,Easton,MK Wii
+98,1v1v1v1,,Julian,Jake,Cam,Easton,MK Wii
+99,1v1v1v1,,Nolan,Owen,Cam,Jake,MK Wii
+100,1v1v1v1,,Nolan,Owen,Cam,Jake,MK Wii
+101,1v1v1v1,,Nolan,Cam,Owen,Jake,MK Wii
+102,1v1v1v1,,Owen,Jake,Nolan,Cam,MK Wii
+103,1v1,,Julian,Ethan,,,MK 8 150cc
+104,1v1,,Jake,Brad,,,MK 8 150cc
+105,1v1,,Cam,Nolan,,,MK 8 150cc
+106,1v1,,Kaiden,Rocky,,,MK 8 150cc
+107,1v1,,Owen,Nolan,,,MK 8 150cc
+108,1v1,,Ethan,Jake,,,MK 8 150cc
+109,2v2,1&2,Owen,Julian,Cam,Ethan,MK 8 150cc
+110,2v2,1&4,Nolan,Jake,Julian,Kaiden,MK 8 150cc
+111,2v2,1&2,Nolan,Brad,Cam,Rocky,MK 8 150cc
+112,2v2,1&2,Cam,Rocky,Kaiden,Brad,MK 8 150cc
+113,2v2,1&2,Owen,Julian,Kaiden,Brad,MK 8 150cc
+114,2v2,1&4,Ethan,Owen,Jake,Rocky,MK 8 150cc
+115,3v3,,Jake&Owen&Julian,Ethan&Rocky&Kaiden,,,MK 8 150cc
+116,3v3,,Jake&Owen&Julian,Brad&Nolan&Cam,,,MK 8 150cc
+117,3v3,,Ethan&Rocky&Kaiden,Brad&Nolan&Cam,,,MK 8 150cc
+118,3v3,,Ethan&Rocky&Kaiden,Brad&Nolan&Cam,,,MK 8 150cc
+119,1v1,,Owen,Ethan,,,MK 8 150cc
+120,2v2,1&2,Julian,Jake,Rocky,Kaiden,MK 8 150cc
+121,1v1v1,,Ty,Carson,Ashlin,,Garfield
+122,1v1v1,,Kaiden,Brad,Cole,,Garfield
+123,1v1v1,,Julian,Ty,Carson,,Garfield
+124,1v1v1,,Ethan,Jake,Kaiden,,Garfield
+125,1v1v1,,Julian,Owen,Cole,,Garfield
+126,1v1v1,,Ethan,Jake,Nathaniel,,Garfield
+127,1v1v1,,Brad,Nathaniel,Alex,,Garfield
+128,2v2,1&2,Brad,Ethan,Julian,Ashlin,Garfield
+129,2v2,1&3,Owen,Ty,Carson,Jake,Garfield
+130,1v1v1v1,,Julian,Brad,Alex,Cam,MK World
+131,1v1v1v1,,Julian,Cam,Alex,Brad,MK World
+132,1v1v1v1,,Julian,Cam,Alex,Brad,MK World
+133,1v1v1v1,,Ethan,Cam,Owen,Alex,MK World
+134,1v1v1v1,,Ty,Cam,Ethan,Alex,MK World
+135,1v1v1v1,,Ethan,Cam,Alex,Zach,MK World
+136,1v1v1v1,,Julian,Ethan,Brad,Zach,MK World
+137,1v1v1v1,,Ethan,Julian,Brad,Zach,MK World
+138,1v1v1v1,,Julian,Ethan,Brad,Zach,MK World
+139,1v1v1,,Jake,Nolan,Carson,,MK World
+140,1v1v1,,Jake,Nolan,Carson,,MK World
+141,1v1v1,,Jake,Ty,Owen,,MK World
+142,1v1v1,,Owen,Jake,Ty,,MK World
+143,1v1v1,,Nolan,Ty,Carson,,MK World
+144,1v1v1,,Nolan,Carson,Ty,,MK World
+145,1v1v1,,Jake,Owen,Nolan,,MK World
+146,1v1v1,,Nolan,Owen,Jake,,MK World
+147,1v1v1,,Owen,Ty,Carson,,MK World
+148,1v1v1,,Ty,Owen,Carson,,MK World
+149,1v1,,Owen,Julian,,,MK World
+150,1v1,,Owen,Julian,,,MK World
+151,1v1,,Ethan,Nolan,,,MK World
+152,1v1,,Ethan,Nolan,,,MK World
+153,1v1,,Jake,Cam,,,MK World
+154,1v1,,Jake,Cam,,,MK World
+155,1v1v1,,Carson,Alex,Zach,,MK World
+156,1v1v1,,Carson,Alex,Zach,,MK World
+157,1v1v1,,Alex,Zach,Carson,,MK World
+158,1v1,,Carson,Alex,,,MK World
+159,1v1,,Ty,Carson,,,MK World
+160,1v1,,Ty,Carson,,,MK World
+161,1v1v1v1,,Julian,Cam,Nolan,Ty,MK World
+162,1v1v1v1,,Julian,Nolan,Cam,Ty,MK World
+163,1v1v1v1,,Nolan,Julian,Cam,Ty,MK World
+164,1v1v1v1,,Julian,Jake,Owen,Ethan,MK World
+165,1v1v1v1,,Ethan,Julian,Jake,Owen,MK World
+166,1v1v1v1,,Owen,Julian,Jake,Ethan,MK World
+167,1v1v1v1,,Julian,Ethan,Owen,Jake,MK World
+168,1v1,,Ethan,Owen,,,MK World
+169,1v1v1v1,,Nolan,Julian,Rocky,Easton,MK 8 200cc
+170,1v1v1v1,,Owen,Cam,Ethan,Julian,MK 8 200cc
+171,1v1v1v1,,Cam,Jake,Brad,Nathaniel,MK 8 200cc
+172,1v1v1v1,,Nolan,Rocky,Alex,Kaiden,MK 8 200cc
+173,2v2,1&4,Ethan,Easton,Kaiden,Brad,MK 8 200cc
+174,2v2,1&4,Owen,Jake,Alex,Nathaniel,MK 8 200cc
+175,2v2,1&2,Owen,Rocky,Cam,Kaiden,MK 8 200cc
+176,2v2,1&3,Nolan,Julian,Ethan,Alex,MK 8 200cc
+177,2v2,1&4,Easton,Julian,Jake,Kaiden,MK 8 200cc
+178,2v2,1&3,Brad,Rocky,Ethan,Nathaniel,MK 8 200cc
+179,1v1v1v1,,Nolan,Easton,Alex,Nathaniel,MK 8 200cc
+180,1v1v1v1,,Cam,Jake,Owen,Brad,MK 8 200cc
+181,1v1,,Owen,Cam,,,MK 8 200cc
+182,1v1,,Cam,Rocky,,,MK 8 200cc
+183,2v2,,Rocky,Easton,Kaiden,Nathaniel,MK 8 200cc
+184,2v2,,Owen,Easton,Kaiden,Nathaniel,MK 8 200cc
+185,3v3,,Easton&Kaiden&Cam,Owen&Rocky&Nathaniel,,,MK 8 200cc
+186,1v1,,Jake,Ethan,,,MK 8 200cc
+187,1v1,,Nolan,Julian,,,MK 8 200cc
+188,2v2,1&4,Julian,Nolan,Brad,Alex,MK 8 200cc
+189,2v2,1&4,Ethan,Jake,Alex,Brad,MK 8 200cc
+190,3v3,,Ethan&Brad&Nolan,Jake&Alex&Julian,,,MK 8 200cc
+191,3v3,,Ethan&Brad&Nolan,Easton&Kaiden&Cam,,,MK 8 200cc
+192,3v3,,Easton&Kaiden&Cam,Ethan&Brad&Nolan,,,MK 8 200cc
+193,3v3,,Easton&Kaiden&Cam,Ethan&Brad&Nolan,,,MK 8 200cc
+194,1v1v1v1,,Cam,Kaiden,Cole,Julian,MK 64
+195,1v1v1v1,,Julian,Kaiden,Cam,Cole,MK 64
+196,1v1v1v1,,Cam,Kaiden,Julian,Cole,MK 64
+197,1v1v1v1,,Cam,Santi,George,Cole,MK 64
+198,1v1v1v1,,Cam,Santi,Cole,George,MK 64
+199,1v1v1v1,,Cam,Santi,Cole,George,MK 64
+200,1v1v1v1,,George,Kaiden,Julian,Santi,MK 64
+201,1v1v1v1,,Julian,Kkaiden,Santi,George,MK 64
+202,1v1v1v1,,Kaiden,Julian,George,Santi,MK 64
+203,1v1v1,,Owen,Ewan,Jake,,MK 64
+204,1v1v1,,Owen,Jake,Ewan,,MK 64
+205,1v1v1,,Owen,Alex,Brad,,MK 64
+206,1v1v1,,Alex,Brad,Owen,,MK 64
+207,1v1v1,,Jake,Alex,Ewan,,MK 64
+208,1v1v1,,Jake,Alex,Ewan,,MK 64
+209,1v1v1,,Brad,Jake,Owen,,MK 64
+210,1v1v1,,Brad,Owen,Jake,,MK 64
+211,1v1v1,,Alex,Ewan,Brad,,MK 64
+212,1v1v1,,Brad,Alex,Ewan,,MK 64
+213,1v1,,Owen,Brad,,,MK 64
+214,1v1,,Cam,Brad,,,MK 64
+215,1v1,,Cam,Brad,,,MK 64
+216,1v1,,Julian,Alex,,,MK 64
+217,1v1,,Julian,Alex,,,MK 64
+218,1v1,,Owen,Kaiden,,,MK 64
+219,1v1,,Owen,Kaiden,,,MK 64
+220,1v1v1,,George,Ewan,Cole,,MK 64
+221,1v1v1,,George,Ewan,Cole,,MK 64
+222,1v1v1,,Jake,George,Santi,,MK 64
+223,1v1v1,,Jake,Santi,George,,MK 64
+224,1v1v1,,Jake,Santi,George,,MK 64
+225,1v1v1v1,,Jake,Brad,Alex,Kaiden,MK 64
+226,1v1v1v1,,Kaiden,Jake,Alex,Brad,MK 64
+227,1v1v1v1,,Jake,Alex,Brad,Kaiden,MK 64
+228,1v1,,Kaiden,Alex,,,MK 64
+229,1v1v1v1,,Owen,Jake,Cam,Julian,MK 64
+230,1v1v1v1,,Owen,Cam,Julian,Jake,MK 64
+231,1v1v1v1,,Owen,Cam,Julian,Jake,MK 64
+232,1v1v1v1,,Cam,Jake,Owen,Julian,MK 64
+233,1v1v1v1,,Nolan,Kaiden,Aiden,Ty,MK DD
+234,1v1v1v1,,Owen,Alex,Cam,Jake,MK DD
+235,1v1v1v1,,Ethan,Julian,Nathaniel,Ashlin,MK DD
+236,1v1v1v1,,Kaiden,Alex,Owen,Jake,MK DD
+237,1v1v1v1,,Kaiden,Ethan,Jake,Nathaniel,MK DD
+238,1v1v1v1,,Nolan,Nathaniel,Aiden,Ashlin,MK DD
+239,1v1v1v1,,Cam,Nolan,Owen,Julian,MK DD
+240,1v1v1v1,,Cam,Ethan,Julian,Ty,MK DD
+241,1v1v1v1,,Ty,Alex,Aiden,Ashlin,MK DD
+242,2v2,1&4,Owen,Cam,Kaiden,Ty,MK DD
+243,2v2,1&3,Cam,Ty,Ashlin,Nathaniel,MK DD
+244,2v2,1&4,Ethan,Aiden,Jake,Nolan,MK DD
+245,2v2,1&3,Julian,Ethan,Aiden,Alex,MK DD
+246,2v2,1&3,Julian,Owen,Aiden,Nathaniel,MK DD
+247,2v2,1&2,Jake,Julian,Owen,Ty,MK DD
+248,2v2,1&3,Nolan,Kaiden,Alex,Ashlin,MK DD
+249,2v2,1&2,Ethan,Nolan,Cam,Ashlin,MK DD
+250,2v2,1&4,Nathaniel,Ethan,Alex,Ty,MK DD
+251,2v2,1&3,Owen,Nolan,Nathaniel,Alex,MK DD
+252,2v2,1&3,Cam,Julian,Ashlin,Jake,MK DD
+253,2v2,1&3,Cam,Aiden,Kaiden,Jake,MK DD
+254,3v3v3v3,,Ashlin&Cam&Kaiden,Julian&Jake&Aiden,Ethan&Alex&Nolan,Nathaniel&Owen&Ty,MK DD
+255,1v1,,Aiden,Ashlin,,,MK DD
+256,1v1,,Jake,Ashlin,,,MK DD
+257,2v2,1&3,Julian,Cam,Jake,Kaiden,MK DD
+258,2v2,1&3,Julian,Kaiden,Aiden,Cam,MK DD
+259,1v1,,Aiden,Nolan,,,MK DD
+260,1v1,,Alex,Jake,,,MK DD
+261,2v2,1&2,Ethan,Alex,Jake,Julian,MK DD
+262,2v2,1&4,Nolan,Aiden,Julian,Ethan,MK DD
+263,1v1v1v1,,Cam,Nathaniel,George,Riley,MK Wii
+264,1v1v1v1,,Owen,Ewan,Jake,Ty,MK Wii
+265,1v1v1v1,,Julian,Nolan,Alex,Ethan,MK Wii
+266,1v1v1v1,,Alex,Riley,Julian,Owen,MK Wii
+267,1v1v1v1,,Nolan,Alex,Nathaniel,George,MK Wii
+268,1v1v1v1,,Cam,Ethan,Jake,Ty,MK Wii
+269,1v1v1v1,,Owen,Julian,Ewan,Ty,MK Wii
+270,1v1v1v1,,Ewan,Nolan,George,Nathaniel,MK Wii
+271,1v1v1v1,,Cam,Riley,Jake,Ethan,MK Wii
+272,2v2,1&3,Cam,Ethan,Ewan,Owen,MK Wii
+273,2v2,1&3,Cam,Ethan,Alex,Nathaniel,MK Wii
+274,2v2,1&3,Nolan,Julian,Riley,Jake,MK Wii
+275,2v2,1&3,Riley,George,Ty,Jake,MK Wii
+276,2v2,1&4,Cam,Riley,Ty,Ewan,MK Wii
+277,2v2,1&3,Ty,Ewan,Nolan,Alex,MK Wii
+278,2v2,1&2,Jake,Julian,Nathaniel,Ethan,MK Wii
+279,2v2,1&3,Julian,Owen,George,Nathaniel,MK Wii
+280,2v2,1&3,Cam,Jake,Alex,George,MK Wii
+281,2v2,1&4,Julian,Alex,Ewan,George,MK Wii
+282,2v2,1&3,Nolan,Owen,Ty,Eel,MK Wii
+283,2v2,1&4,Nolan,Owen,Ethan,Riley,MK Wii
+284,3v3v3v3,,Cam&Ewan&Alex,George&Jake&Julian,Nathaniel&Owen&Ethan,Riley&Nolan&Ty,MK Wii
+285,1v1,,Riley,George,,,MK Wii
+286,1v1,,Nolan,Jake,,,MK Wii
+287,2v2,1&2,Nolan,Ty,Jake,Julian,MK Wii
+288,1v1,,Cam,Riley,,,MK Wii
+289,1v1,,Nolan,Alex,,,MK Wii
+290,2v2,1&4,Cam,Nolan,Ty,Ewan,MK Wii
+291,2v2,1&2,Ewan,Alex,Ty,Riley,MK Wii

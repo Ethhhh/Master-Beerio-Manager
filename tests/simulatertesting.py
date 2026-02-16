@@ -4,10 +4,11 @@ import matplotlib.pyplot as plt
 #these are just import for the plotting tool and some randomness
 #THIS SIMULATOR IS ONLY SIMULATING 1v1v1v1's I do have logic for other races 1v1v1, 1v1, 2v2, and relays (these are a W.I.P)
 # --- 1. SETTINGS ---
-STARTING_ELO = 10000.0 #This is the baseline rating for every player in the simulation (The starting Elo)
+STARTING_ELO = 50000.0 #This is the baseline rating for every player in the simulation (The starting Elo)
 K_FACTOR = 150.0 # This is the senetivity, it determines how much the points can change in each race (Remember there are technically 3 races for each race in a 1v1v1v1 (AvB, AvC, AvD))
-DIVIDER = 2000.0 #Higher values make the system less punishing in a way and increase the spread of points 2000 might be an elo between (5000 - 15000) but 400 might only have a difference between (8000 - 12000)
-TOTAL_RACES = 3000 # the amount of races being simulated (4 random players selected from the player array and put against eachother)
+DIVIDER = 3500.0 #Higher values make the system less punishing in a way and increase the spread of points 2000 might be an elo between (5000 - 15000) but 400 might only have a difference between (8000 - 12000)
+BASE = 1.4
+TOTAL_RACES = 275 # the amount of races being simulated (4 random players selected from the player array and put against eachother)
 
 player_names = [
     "Aiden", "Alex", "Ashlin", "Brad", "Cam", "Carson", "Charlie", "Cole", 
@@ -22,7 +23,7 @@ skills = {"Cam": 1.5,
           "Julian": 1.3,
           "Ethan": 1.2,
           "Kaiden": 1.1,
-          "Jake":1.05,
+          "Jake":1.15,
           "Aiden": 1.0,
           "Alex": 0.95,
           "Charlie": 0.94,
@@ -43,8 +44,8 @@ skills = {"Cam": 1.5,
 players = {name: {"elo": STARTING_ELO} for name in player_names} #sets up data structures, "players" stores the current rating, "history" stores the raing over time
 history = {name: [STARTING_ELO] for name in player_names}
 
-def expected_result(ra, rb):
-    return 1 / (1 + 10 ** ((rb - ra) / DIVIDER)) #calculates the probablity (0 to 1) that Player A (ra) will beat Player B (rb) based on the formula found in the planning folder (the image.png one not the other one)
+def elo_gained(ra, rb):
+    return (BASE ** ((rb - ra) / DIVIDER)) * K_FACTOR
 
 def run_simulation():
     for _ in range(TOTAL_RACES):
@@ -59,13 +60,13 @@ def run_simulation():
         r1, r2, r3, r4 = [players[p]['elo'] for p in results]
 
         #calculate the rating changes (c) - each player is compared against the other 3 they went against in the race. 
-        c1 = K_FACTOR * ((1-expected_result(r1,r2)) + (1-expected_result(r1,r3)) + (1-expected_result(r1,r4)))
+        c1 = elo_gained(r1, r2) + elo_gained(r1, r3) + elo_gained(r1, r4)
 
-        c2 = K_FACTOR * ((0-expected_result(r2,r1)) + (1-expected_result(r2,r3)) + (1-expected_result(r2,r4)))
+        c2 = - elo_gained(r1, r2) + elo_gained(r2, r3) + elo_gained(r2, r4)
 
-        c3 = K_FACTOR * ((0-expected_result(r3,r1)) + (0-expected_result(r3,r2)) + (1-expected_result(r3,r4)))
+        c3 = - elo_gained(r1, r3) - elo_gained(r2, r3) + elo_gained(r3, r4)
 
-        c4 = K_FACTOR * ((0-expected_result(r4,r1)) + (0-expected_result(r4,r2)) + (0-expected_result(r4,r3)))
+        c4 = - elo_gained(r1, r4) - elo_gained(r2, r4) - elo_gained(r3, r4)
 
 
         saved_points = 0 #this is a protection so that if second place is still going to lose points (for example if cole beats cam) it will cut the amount of points lost in half. it will still be net neutral as it corrects the winners score (cole) aswell
